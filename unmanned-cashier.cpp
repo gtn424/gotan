@@ -1,4 +1,3 @@
-﻿// どういう処理をするコードなのかを必ずコメントアウトする。
 // 無人レジ本屋の実装を行う
 // 本領域の抽出とフレーム間差分(人が本を取ったか取ってないか)を利用する。
 
@@ -30,7 +29,7 @@ int main(void) {
 	createTrackbar("threshold", "slider", &border, 256);
 
 	VideoCapture camera; // cameraは映像ソースを表現するためのオブジェクト
-	camera.open(1);      // 映像ソースとして0番目のカメラを指定
+	camera.open(1);      // 映像ソースとして1番目のカメラを指定
 
 
 	while (1) {
